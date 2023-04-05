@@ -4,7 +4,7 @@ import axios from "axios";
 import Card from "./Card";
 const ApiBox = ({ lat, lon }) => {
   Geocode.setApiKey("AIzaSyDyg3wITfkdePL5z451280VRHGu8aZNKao");
-  const [errorMessage, setErrorMessage] = useState(null);
+  // const [errorMessage, setErrorMessage] = useState(null);
   const [weatherData, setWeatherData] = useState(null);
   useEffect(() => {
     if (lat && lon) {
@@ -26,7 +26,8 @@ const ApiBox = ({ lat, lon }) => {
           setWeatherData(response.data);
         })
         .catch((error) => {
-          setErrorMessage("Unable to retrieve weather data");
+          // setErrorMessage("Unable to retrieve weather data");
+          console.log(error)
         });
     }
   }, [lat, lon]);

@@ -5,7 +5,7 @@ const Weather = () => {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
 
-  const [errorMessage, setErrorMessage] = useState(null);
+  // const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -14,7 +14,8 @@ const Weather = () => {
         setLongitude(position.coords.longitude);
       },
       (error) => {
-        setErrorMessage("Unable to retrieve location");
+        // setErrorMessage("Unable to retrieve location");
+        console.log(error)
       }
     );
   }, []);

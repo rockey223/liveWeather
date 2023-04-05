@@ -19,17 +19,18 @@
 }
 
 .card {
-  height: 443px;
-  width: 658px;
+  height: 400px;
+  width: 758px;
   background: linear-gradient(
     180deg,
     #00beff 7.29%,
-    #9be6ff 61.46%,
-    rgba(255, 255, 255, 0.88) 93.23%
+    #416fbe 61.46%,
+    rgba(22, 117, 184, 0.88) 93.23%
   );
   border-radius: 37px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 40px;
 }
 .tempDetails {
@@ -49,6 +50,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+ 
 }
 .content{
     display: flex;
@@ -67,7 +69,7 @@
   justify-content: center;
 }
 .locationName {
-  font-weight: 400;
+  font-weight: 900;
   font-size: 46px;
   line-height: 120%;
 }
@@ -79,4 +81,25 @@
   font-weight: 400;
   font-size: 46px;
   line-height: 120%;
+}
+
+.clouds,
+.snow{
+  color: white;
+}
+.clear{
+  color:rgba(211, 135, 35, 0.88)
+}
+
+@media only screen and (max-width:720px) {
+  .mainWrapper{
+    height: auto;
+  }
+  .card {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
 }
