@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.mainWrapper {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    180deg,
+    #236f9a 7.29%,
+    #1e2b9f 61.46%,
+    rgba(101, 96, 134, 0.88) 93.23%
+  );
+}
+
+.card {
+  height: 443px;
+  width: 658px;
+  background: linear-gradient(
+    180deg,
+    #00beff 7.29%,
+    #9be6ff 61.46%,
+    rgba(255, 255, 255, 0.88) 93.23%
+  );
+  border-radius: 37px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.tempDetails {
+  height: 279px;
+  width: 325px;
+}
+
+.tempDetailsContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 900;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.icon {
+  text-align: start;
+  font-size: 40px;
+}
+.locationDetails {
+  height: 299px;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.locationName {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 120%;
+}
+.tempDetailsIcon {
+  font-size: 10rem;
+}
+
+.temperature {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 120%;
+}
