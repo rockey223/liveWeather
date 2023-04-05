@@ -5,29 +5,16 @@ import { TfiLocationArrow } from "react-icons/tfi";
 import { CgArrowsExchangeAltV } from "react-icons/cg";
 import { MdOutlineVisibility,MdThunderstorm } from "react-icons/md";
 import { BsFillCloudsFill,BsFillCloudRainFill,BsCloudDrizzleFill,BsCloudSnowFill,BsFillSunFill } from "react-icons/bs";
-// import { useState, useEffect } from "react";
+
 const Card = (props) => {
   console.log("card",props.data);
-  // const { temp, temp_max, temp_min, pressure, humidity } = props.data.main;
-  // console.log(temp)
-  // const { name, visibility } = data;
-  // const { speed } = data.wind;
-  // const {main}  = data.weather[0];
-  // useEffect(() => {
-  //   setTimeout(getWeatherData, 3000);
-  //   getWeatherData();
-  // }, []);
-//   console.log("card", name);
-//  console.log(main)
+  
 if (!props.data) {
   return <div>Loading...</div>;
   }
   return (
     <>
-    {/* {props.data.main.temp}
-    {props.data.main.temp_max}
-    {props.data.main.temp_min}
-    {props.data.main.pressure} */}
+    
       <div className="mainWrapper">
         <div className="card">
           <div className="tempDetails">
@@ -76,22 +63,22 @@ if (!props.data) {
                 switch (props.data.weather[0].main) {
                   case "Rain":
                     return <BsFillCloudRainFill className="tempDetailsIcon"/>;
-                    // break;
+
                   case "Clouds":
                     return <BsFillCloudsFill className="tempDetailsIcon" />;
-                    // break;
+
                   case "Drizzle":
                     return <BsCloudDrizzleFill className="tempDetailsIcon"/>;
-                    // break;
+
                   case "Thunderstorm":
                     return <MdThunderstorm className="tempDetailsIcon"/>;
-                    // break;
+
                   case "Snow":
                     return <BsCloudSnowFill className="tempDetailsIcon"/>;
-                    // break;
+
                   case "Clear":
                     return <BsFillSunFill className="tempDetailsIcon"/>;
-                    // break;
+
                   default:
                     return "asdf";
                 }
